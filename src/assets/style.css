@@ -24,7 +24,6 @@ body {
 ul.nav-list {
   list-style: none;
   display: flex;
-  justify-content: end;
   color: #fff;
 }
 ul.nav-list li {
@@ -34,4 +33,7 @@ ul.nav-list li {
 ul.nav-list li a {
     color: #fff;
     text-decoration: none;
+}
+.adverts-slide {
+    height: 250px;
 }

@@ -17,7 +17,7 @@ class Adverts extends React.Component {
                         <Advert name={element.name} url={element.url} ></Advert>
                     })
                 }
-            </section >
+            </section>
         );
     }
 }

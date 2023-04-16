@@ -1,20 +1,23 @@
 import React from 'react';
+import Advert from "./Advert";
 
 class Adverts extends React.Component {
-    state = {
-        list: [
-            {
-                name: '',
-                id: 1,
-                url: ''
-            }
-        ]
+    constructor() {
+        super();
+        this.state = { ads: [] };
+    }
+    componentDidMount() {
+        // fetch ads
     }
     render() {
         return (
             <section className='adverts-slide'>
-                {this.state.list.map(element =>{})}
-            </section>
+                {
+                    this.state.list.map(element => {
+                        <Advert name={element.name} url={element.url} ></Advert>
+                    })
+                }
+            </section >
         );
     }
 }

@@ -1,5 +1,6 @@
 :root {
   --radius: 12px;
+  --green: #078b3e;
 }
 body {
   margin: 0;
@@ -27,7 +28,7 @@ body {
 }
 .nav-bar {
   display: flex;
-  background: #10c94e;
+  background: var(--green);
   padding: 2px 4px;
   align-items: center;
   border-bottom-left-radius: var(--radius);
@@ -46,16 +47,18 @@ ul.nav-list {
   list-style: none;
   display: flex;
   color: #fff;
+  margin: auto;
+  padding: 0.9rem;
 }
 ul.nav-list li {
   width: 100%;
-  margin-right: 0.8rem;
+  margin: auto 0.8em;
 }
 
 ul.nav-list li a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 .adverts-slide {
-    height: 250px;
+  height: 250px;
 }

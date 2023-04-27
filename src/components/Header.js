@@ -9,8 +9,6 @@ export default class Header extends React.Component {
         return (
             <header className='nav-header'>
                 <nav className="nav-bar">
-                    <img src={logo} alt='' className='nav-image' />
-                    <h4 className='nav-brand-name'>Yomix</h4>
                     <ul className="nav-list">
                         <li>
                             <a href='/'>Home</a>

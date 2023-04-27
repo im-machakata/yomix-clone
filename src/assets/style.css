@@ -52,6 +52,7 @@ body {
   font-size: 2.3em;
   color: #111;
 }
+
 .header-gradient {
   background-color: #111;
   height: 15px;
@@ -101,4 +102,36 @@ ul.nav-list li a {
 }
 .adverts-slide {
   height: 250px;
+}
+.button {
+  cursor: pointer;
+  margin-top: 8px;
+  padding: 1em;
+  border: 0;
+  outline: 0;
+  border-radius: 4px;
+  filter: drop-shadow(1px 3px 3px #dadada);
+  width: 100%;
+  background-color: var(--green);
+  color: #111;
+}
+.login-container {
+  padding: 8px 16px;
+  margin-top: 1em;
+}
+.text-input {
+  border-bottom: 1px solid #dadada;
+  padding: auto 4px;
+  margin-bottom: 0.6em;
+  display: flex;
+}
+.input-image {
+  width: 20px;
+  height: 20px;
+}
+input {
+  outline: 0;
+  border: 0;
+  width: 100%;
+  padding: 8px;
 }

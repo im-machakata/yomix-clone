@@ -1,6 +1,6 @@
 :root {
   --radius: 12px;
-  --green: #19b43f;
+  --green: #40eb40;
 }
 body {
   margin: 0;
@@ -11,13 +11,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
   display: flex;
   background: #f5f5f5;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  user-select: none;
+  height: 100vh;
+  max-height: 100%;
 }
 .application {
-  margin-top: 12px;
   background: #fff;
-  height: 640px;
+  height: 600px;
+  max-height: 100%;
   width: 320px;
   border-radius: var(--radius);
   filter: drop-shadow(1px 3px 8px #dadada);
@@ -34,6 +37,29 @@ body {
   height: 40px;
   display: flex;
   align-items: center;
+}
+.login-header {
+  background-color: var(--green);
+  border-radius: var(--radius);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 2.3em;
+  color: #111;
+}
+.header-gradient {
+  background-color: #111;
+  height: 15px;
+  width: 100%;
+  margin-top: -15px;
+}
+.text-white {
+  color: #fff;
 }
 .d-none {
   opacity: 0;

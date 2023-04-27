@@ -1,12 +1,12 @@
 // components import
-import Header from '../../components/Header.js'
-import Navigation from '../../components/Navigation.js'
+import Header from '../../components/LoginHeader.js'
 
 function Login() {
   return (
     <div className='application'>
-      <Header/>
-      <Navigation/>
+      <Header></Header>
+      <section></section>
+      <footer></footer>
     </div>
   );
 }

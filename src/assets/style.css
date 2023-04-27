@@ -1,6 +1,6 @@
 :root {
   --radius: 12px;
-  --green: #078b3e;
+  --green: #19b43f;
 }
 body {
   margin: 0;
@@ -10,6 +10,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: flex;
+  background: #f5f5f5;
   justify-content: center;
   align-items: center;
 }
@@ -21,15 +22,28 @@ body {
   border-radius: var(--radius);
   filter: drop-shadow(1px 3px 8px #dadada);
 }
-.nav-header {
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  background: var(--green);
+  padding: 4px 0.8em;
+  color: #fff;
+  margin: auto;
+}
+.header-item {
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+.d-none {
+  opacity: 0;
+}
+.navigation {
   bottom: 0;
   position: absolute;
   width: 100%;
-}
-.nav-bar {
-  display: flex;
   background: var(--green);
-  padding: 2px 4px;
+  padding: 2px auto;
   align-items: center;
   border-bottom-left-radius: var(--radius);
   border-bottom-right-radius: var(--radius);
@@ -46,12 +60,12 @@ body {
 ul.nav-list {
   list-style: none;
   display: flex;
+  justify-content: space-between;
   color: #fff;
   margin: auto;
   padding: 0.9rem;
 }
 ul.nav-list li {
-  width: 100%;
   margin: auto 0.8em;
 }
 

@@ -1,7 +1,9 @@
 :root {
   --radius: 12px;
-  --green: #40eb40;
-  --light-green: #75e675;
+  --green: #5cc434;
+  --green-darker: #3aa70f;
+  --light-green: #C6E3A0;
+  --light-grey: #BCBECB;
 }
 body {
   margin: 0;
@@ -39,21 +41,6 @@ body {
   display: flex;
   align-items: center;
 }
-.login-header {
-  background-color: var(--green);
-  border-radius: var(--radius);
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-  height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: 600;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-size: 2.3em;
-  color: #111;
-}
-
 .header-gradient {
   background-color: #111;
   height: 15px;
@@ -104,7 +91,7 @@ ul.nav-list li a {
 .adverts-slide {
   height: 250px;
 }
-.button {
+button {
   margin-top: 12px;
   padding: 1em;
   border: 0;
@@ -115,14 +102,10 @@ ul.nav-list li a {
   font-weight: 400;
   background: var(--light-green);
 }
-.button:disabled {
+button:not(.disabled) {
   cursor: pointer;
   filter: drop-shadow(1px 3px 3px #dadada);
   background-color: var(--green);
-}
-.login-container {
-  padding: 8px 16px;
-  margin-top: 1em;
 }
 .text-input {
   border-bottom: 1px solid #dadada;
@@ -141,12 +124,8 @@ input {
   width: 100%;
   padding: 8px;
 }
-.text-input a {
-  cursor: pointer;
-  position: absolute;
-  font-size: 12px;
-  color: #7c7c7c;
+a {
+  color: #4e4e4e;
   margin-bottom: 8px;
   margin-left: auto;
-  right: 14px;
 }

@@ -13,6 +13,7 @@ function Login() {
         <div className='text-input'>
           <div className='input-image'></div>
           <input type='text' placeholder='Password' />
+          <a>Forgot?</a>
         </div>
         <button className='button'>Login</button>
       </section>

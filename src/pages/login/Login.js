@@ -1,15 +1,15 @@
 import { useState } from 'react';
-import Style from './Login.css'
+import './Login.css'
 import Header from '../../components/LoginHeader.js'
 
 function Login() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const isBtnEnabled = () => {
-    return username.length > 1 && password.length > 1;
+  const btnDisabled = () => {
+    return username.toString().trim.length < 1 && password.trim < 1;
   }
   const btnClasses = () => {
-    return isBtnEnabled() ? '' : 'disabled';
+    return btnDisabled() ? 'disabled' : '';
   }
   return (
     <div className='application'>
@@ -31,7 +31,7 @@ function Login() {
         </div>
       </section>
       <footer className='login-footer'>
-        Econet Wireless Zimbabwe
+        &copy; Econet Wireless Zimbabwe
       </footer>
     </div>
   );
